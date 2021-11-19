@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Movies</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">WMV</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#search">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#discover">Discover</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div class="mt-5"></div>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-sm-block text-sm-start">
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-sm-block text-sm-start">
+                  <img src="src/img/2_title.png" alt="" class="img-title img-fluid">
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-sm-block text-sm-start">
+                  <img src="src/img/3_title.png" alt="" class="img-title img-fluid">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Search and discover movie -->
+        <div class="container-md mt-5 mb-4">
+          <div class="d-flex justify-content-center" id="search">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search Movie" aria-label="Search Movie" aria-describedby="search-button" id="search-input">
+              <button class="btn btn-primary" type="button" id="search-button">Search</button>
+            </div>
+          </div>
+          <div class="offset-md-2 col-md-8" id="discover">
+            <h2 class="text-center">Discover a Movie</h2>
+            <div class="underline mb-4"></div>
+            <div class="d-flex justify-content-evenly flex-wrap mt-3">
+              <button type="button" class="btn btn-outline-primary" id="nowPlaying">Now Playing</button>
+              <button type="button" class="btn btn-outline-primary" id="popular">Popular</button>
+              <button type="button" class="btn btn-outline-primary" id="topRated">Top Rated</button>
+              <button type="button" class="btn btn-outline-primary" id="upcoming">Upcoming</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- List movie -->
+        <div class="container-lg">
+            <div class="d-flex flex-wrap" id="listMovie"></div>
+          </div>
+    </main>
+
+    <footer class="bg-dark text-center text-lg-start mt-4">
+      <div class="footer-text text-center p-3">
+        ©2021 Copyright by
+        <a class="" href="">adrisabik</a>
+      </div>
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel">Movie Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

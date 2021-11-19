@@ -1,0 +1,39 @@
+
+.card{
+    width: 200px;
+}
+
+.carousel-caption{
+    width: 30%;
+}
+
+.input-group{
+    max-width: 60%;
+}
+
+.underline{
+    width: 300px;
+    height: 5px;
+    background-color: #0d6efd;
+    margin: 0 auto;
+}
+
+.footer-text{
+    color: #fff;
+}
+
+.footer-text a{
+    color: #0d6efd;
+}
+
+@media(max-width: 1000px){
+    .card{
+        width: 150px;
+    }
+}
+
+@media(max-width: 576px){
+    .card{
+        width: 100px;
+    }
+}
